@@ -10,6 +10,8 @@ public class Controller : MonoBehaviour
 	public float rotationX;
 	public float rotationY;
 	
+	public AudioSource _audiosource;
+	public AudioClip   walkaudio;
 	CharacterController characterController;
 	
 	public Camera cam;
@@ -17,7 +19,9 @@ public class Controller : MonoBehaviour
     void Start()
     {
         characterController = this.GetComponent<CharacterController>();
+		_audiosource = this.GetComponent<AudioSource>();
 		Cursor.lockState = CursorLockMode.Locked;
+		_audiosource.clip = walkaudio;
     }
 
     // Update is called once per frame
@@ -25,6 +29,10 @@ public class Controller : MonoBehaviour
     {
         FPSCamera();
 		PlayerControls();
+		//quit
+		if(Input.GetKey(KeyCode.Escape)){
+			Application.Quit();
+		}
     }
 	void PlayerControls(){
 		if(Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0){
@@ -33,6 +41,7 @@ public class Controller : MonoBehaviour
 			
 			Vector3 fwdMovement = Vector3.zero;
 			Vector3 rightMovement = Vector3.zero;
+			_audiosource.pitch = 0.7f;
 			
 			float speed = walkspeed;
 			if(characterController.isGrounded == true){
@@ -41,9 +50,17 @@ public class Controller : MonoBehaviour
 			}
 			if(Input.GetButton("Run")){
 				speed = runspeed;
+				_audiosource.pitch = 1f;
+			}
+			
+			if(!_audiosource.isPlaying){
+				_audiosource.Play();
 			}
 			
 			characterController.SimpleMove(Vector3.ClampMagnitude(fwdMovement + rightMovement, 1f)* speed);
+		}
+		else{
+			_audiosource.Stop();
 		}
 	}
 	void FPSCamera(){
