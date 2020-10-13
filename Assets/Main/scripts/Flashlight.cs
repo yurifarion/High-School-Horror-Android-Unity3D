@@ -53,6 +53,12 @@ public class Flashlight : MonoBehaviour
 		}
 		
 	}
+	public void on_Off(){
+		isFlashlightOn = !isFlashlightOn;
+			//play the sourd
+			//flash_source.clip = flash_clip;
+			//flash_source.Play();
+	}
 	public void Addbattery(float n){
 		starttime = (((starttime + battery) - Time.time) +n);
 	}

@@ -14,13 +14,17 @@ public class Controller : MonoBehaviour
 	public AudioClip   walkaudio;
 	CharacterController characterController;
 	
+	//Touch Controls
+	public bl_Joystick movement_joystick;
+	public bl_Joystick camera_joystick;
+	
 	public Camera cam;
     // Start is called before the first frame update
     void Start()
     {
         characterController = this.GetComponent<CharacterController>();
 		_audiosource = this.GetComponent<AudioSource>();
-		Cursor.lockState = CursorLockMode.Locked;
+		//Cursor.lockState = CursorLockMode.Locked;
 		_audiosource.clip = walkaudio;
     }
 
@@ -35,9 +39,9 @@ public class Controller : MonoBehaviour
 		}
     }
 	void PlayerControls(){
-		if(Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0){
-			float hInput = Input.GetAxisRaw("Horizontal");
-			float vInput = Input.GetAxisRaw("Vertical");
+		if(movement_joystick.Horizontal != 0f || movement_joystick.Vertical != 0){
+			float hInput = movement_joystick.Horizontal;
+			float vInput = movement_joystick.Vertical;
 			
 			Vector3 fwdMovement = Vector3.zero;
 			Vector3 rightMovement = Vector3.zero;
@@ -64,8 +68,8 @@ public class Controller : MonoBehaviour
 		}
 	}
 	void FPSCamera(){
-		rotationX += Input.GetAxis("Mouse X") * 10.0f;
-		rotationY += Input.GetAxis("Mouse Y") * 10.0f;
+		rotationX += camera_joystick.Horizontal * 0.70f;
+		rotationY += camera_joystick.Vertical * 0.70f;
 		
 		rotationX = AngleCorrection(rotationX,-360,360);
 		rotationY = AngleCorrection(rotationY,-70,90);
