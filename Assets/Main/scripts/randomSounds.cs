@@ -14,7 +14,7 @@ public class randomSounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int i = Random.Range(0, 1000);
+        int i = Random.Range(0, 10000);
 		if(i == 5){
 			Sounds.SetActive(true);
 			Destroy(this.gameObject);

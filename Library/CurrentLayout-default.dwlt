@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 74
+  controlID: 152
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 444}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 32
+  controlID: 55
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,8 +187,8 @@ MonoBehaviour:
     y: 390
     width: 630
     height: 341
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -238,8 +238,8 @@ MonoBehaviour:
     y: 0
     width: 536
     height: 322
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -290,8 +290,8 @@ MonoBehaviour:
     y: 0
     width: 370
     height: 731
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -414,9 +414,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.0892919, y: 0.7347002, z: 17.03442}
+    m_Target: {x: 9.740133, y: 9.253976, z: 5.187165}
     speed: 2
-    m_Value: {x: -1.0892919, y: 0.7347002, z: 17.03442}
+    m_Value: {x: 9.740133, y: 9.253976, z: 5.187165}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -449,9 +449,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 1, z: 0, w: 0}
   m_Size:
-    m_Target: 5.0064836
+    m_Target: 5.6564174
     speed: 2
-    m_Value: 5.0064836
+    m_Value: 5.6564174
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -570,9 +570,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 14330000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fcbeffff52c0ffff22f9ffff78fbffffa83b00000c9c0100
+      m_ExpandedIDs: bc36fdfff636fdff8e37fdff9237fdff9c37fdff3a39fdffa656fdffe056fdff7857fdff7c57fdff8657fdff2459fdffb25afdffec5afdff845bfdff885bfdff925bfdff305dfdffda86fdff3289fdffac89fdff4eaafdff90b4fdff8cb5fdffc6b5fdff5eb6fdff62b6fdff86dffdff22e1fdff1ce2fdff9ce2fdffd6e2fdff6ee3fdff920cfeff2e0efeff320efeff6012feff9012feff3613feff6613feff9413feffc213fefff013feffb43ffefff23ffeff8a40feff8e40feffb269feffbc69feffd66bfeff126cfeff146cfeff186cfeff2895feff3295feff7097feffaa97feff4298feff4698feff6ac1feff74c1feff42c3feff7ac3feff7cc3feff80c3feff90ecfeff9aecfeffc4edfefffcedfefffeedfeff02eefeff1217ffffb817ffff3c19ffff7619ffff0e1affff121affff3643ffff4043ffff2449ffff6049ffff6249ffff6649ffff7672ffff8072ffff2673ffff6273ffff6473ffff6873ffff789cffff829cffff269dffff649dffff029effff0c9effff1c9effff46c7ffff30ccffff78fbfffff84d0000e4380100de3901002c4c0100d65b0100e65d0100fe600100886f0100dc760100bed7010052620200907e0200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -646,9 +646,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 98300000
-    m_LastClickedID: 12440
-    m_ExpandedIDs: 00000000342d0000a82e0000162f0000ca2f000024310000ce320000d2320000
+    m_SelectedIDs: 9a300000
+    m_LastClickedID: 12442
+    m_ExpandedIDs: 00000000362d0000aa2e0000182f0000cc2f000026310000d83200001c4d0000344d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,7 +676,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000342d0000a82e0000ca2f000024310000ce320000d2320000
+    m_ExpandedIDs: 00000000362d0000aa2e0000cc2f000026310000d4320000d8320000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
