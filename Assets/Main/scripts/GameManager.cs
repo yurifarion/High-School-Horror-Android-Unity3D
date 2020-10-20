@@ -7,9 +7,10 @@ public class GameManager : MonoBehaviour
 {
 	//UI
 	public GameObject pickUp_UI;
+	public GameObject outro_UI;
 	public Text keyCounter_txt;
 	//controllers
-	private int keysfound = 0;
+	public int keysfound = 0;
 	public bool isGamePaused = false;
 	
 	//trigger
@@ -18,7 +19,9 @@ public class GameManager : MonoBehaviour
 	public GameObject currentKey = null;
 	public GameObject currentPage = null;
 	public int currentPageNumber = 0;
-	
+	//Counters
+	public int amountOfPagesIngame = 0;
+	public int amountOfKeysIngame = 0;
 	//pages
 	public GameObject page1;
 	public GameObject page2;
@@ -33,15 +36,37 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        initSpawns();
     }
 
     // Update is called once per frame
     void Update()
     {
         pickUp_UI.SetActive(isOnKeyTrigger_ || isOnPageTrigger_);
-		
+		if(keysfound == 3){
+			outro_UI.SetActive(true);
+		}
     }
+	void initSpawns(){
+		GameObject[] spawns = GameObject.FindGameObjectsWithTag("SpawnItem");
+		
+		while(amountOfPagesIngame < 6 || amountOfKeysIngame < 3 ){
+			
+			foreach(GameObject i in spawns){
+				int rand = Random.Range(1,5);
+				if(amountOfPagesIngame < 6 && rand == 2 && i.GetComponent<SpawnItem>().kindofItem == "none"){
+					i.GetComponent<SpawnItem>().kindofItem = "Page";
+					i.GetComponent<SpawnItem>().spawnItem();
+					amountOfPagesIngame++;
+				}
+				if(amountOfKeysIngame < 3 && rand == 3 && i.GetComponent<SpawnItem>().kindofItem == "none"){
+					i.GetComponent<SpawnItem>().kindofItem = "Key";
+					i.GetComponent<SpawnItem>().spawnItem();
+					amountOfKeysIngame++;
+				}
+			}
+		}
+	}
 	public void closePage(){
 		page1.SetActive(false);
 		page2.SetActive(false);

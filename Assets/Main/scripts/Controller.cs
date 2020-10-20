@@ -31,6 +31,7 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		
         FPSCamera();
 		PlayerControls();
 		//quit
@@ -39,9 +40,12 @@ public class Controller : MonoBehaviour
 		}
     }
 	void PlayerControls(){
-		if(movement_joystick.Horizontal != 0f || movement_joystick.Vertical != 0){
-			float hInput = movement_joystick.Horizontal;
-			float vInput = movement_joystick.Vertical;
+		if(Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0){
+		//if(movement_joystick.Horizontal != 0f || movement_joystick.Vertical != 0){
+			//float hInput = movement_joystick.Horizontal;
+			//float vInput = movement_joystick.Vertical;
+			float hInput = Input.GetAxis("Horizontal");
+			float vInput = Input.GetAxis("Vertical");
 			
 			Vector3 fwdMovement = Vector3.zero;
 			Vector3 rightMovement = Vector3.zero;
@@ -49,8 +53,8 @@ public class Controller : MonoBehaviour
 			
 			float speed = walkspeed;
 			if(characterController.isGrounded == true){
-				fwdMovement = this.transform.forward * vInput;
-				rightMovement = this.transform.right * hInput;
+				fwdMovement = cam.gameObject.transform.forward * vInput;
+				rightMovement = cam.gameObject.transform.right * hInput;
 			}
 			if(Input.GetButton("Run")){
 				speed = runspeed;
@@ -68,8 +72,10 @@ public class Controller : MonoBehaviour
 		}
 	}
 	void FPSCamera(){
-		rotationX += camera_joystick.Horizontal * 0.70f;
-		rotationY += camera_joystick.Vertical * 0.70f;
+		//rotationX += camera_joystick.Horizontal * 0.70f;
+		//rotationY += camera_joystick.Vertical * 0.70f;
+		rotationX += Input.GetAxis("Mouse X")*10;
+		rotationY += Input.GetAxis("Mouse Y")*10;
 		
 		rotationX = AngleCorrection(rotationX,-360,360);
 		rotationY = AngleCorrection(rotationY,-70,90);
