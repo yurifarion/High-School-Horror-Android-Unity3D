@@ -32,6 +32,6 @@ public class ExitTrigger : MonoBehaviour
 		}
 	}
 	public void GameWin(){
-		Debug.Log("GameWin");
+		Application.LoadLevel("GameWin");
 	}
 }

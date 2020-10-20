@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Monster : MonoBehaviour
 {
+	private GameObject  gm;
+	
 	public GameObject player;
 	public Transform player_transform;
 	
@@ -19,6 +21,8 @@ public class Monster : MonoBehaviour
 	public Transform cube_transform;
 	public Vector3 spawnOrigin;
 	public float distanceRayMax;
+	public Transform safePlace;
+	public bool isSafePlaceavailable;
 	
 	public float spawnRate =80f;
 	public float nextTeleport = 10f;
@@ -38,12 +42,26 @@ public class Monster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		gm = GameObject.FindGameObjectWithTag("GameManager");
         nextTeleport = spawnRate;
     }
-
+	void goToSafePlace(){
+		transform.position = safePlace.position;
+		nextTeleport += spawnRate;
+		isSafePlaceavailable = false;
+	}
+	IEnumerator SafePlaceTimer()
+    {
+        yield return new WaitForSeconds(3);
+        isSafePlaceavailable = true;
+    }
     // Update is called once per frame
     void Update()
     {
+		if(gm.GetComponent<GameManager>().keysfound > 0){
+		if(isSafePlaceavailable && !isOnFlashLightTrigger && !onDanger){
+			goToSafePlace();
+		}
 		FacePlayer();
 		Damage();
         currentTime = Time.time;
@@ -51,18 +69,34 @@ public class Monster : MonoBehaviour
 		RaycastHit hit;
 		 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit"+hit.transform.gameObject.tag);
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            if(hit.transform.gameObject.tag == "Player"){
+				inView = true;
+			}
+			else inView = false;
         }
 		
-		inView = Vector3.Dot(Vector3.forward,player_transform.InverseTransformPoint(transform.position)) > 0;
+
 		
 		spawnOrigin.Set(cube_transform.position.x,cube_transform.position.y,cube_transform.position.z);
 		
 		if( !(nearPlayer || inView)){
 			if(currentTime > nextTeleport){
-				transform.position = new Vector3(Random.Range(spawnOrigin.x - distanceRayMax,spawnOrigin.x + distanceRayMax),-0.59f,Random.Range(spawnOrigin.z - distanceRayMax,spawnOrigin.z + distanceRayMax));
-				nextTeleport += spawnRate;
+				bool ableToTeleport = (inView && !isOnFlashLightTrigger);
+				do{
+						transform.position = new Vector3(Random.Range(spawnOrigin.x - distanceRayMax,spawnOrigin.x + distanceRayMax),player_transform.position.y - 2.24f,Random.Range(spawnOrigin.z - distanceRayMax,spawnOrigin.z + distanceRayMax));
+					if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
+						{
+							//Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+							if(hit.transform.gameObject.tag == "Player"){
+								inView = true;
+							}
+							else inView = false;
+							
+							ableToTeleport = (!inView || isOnFlashLightTrigger);
+						}
+				}while(ableToTeleport);
+				nextTeleport += 10;
 			}
 		}
 		
@@ -74,6 +108,7 @@ public class Monster : MonoBehaviour
 		}else{
 			nearPlayer = false;
 		}
+		}
     }
 	void FacePlayer(){
 		Vector3 diretion = (player_transform.position - transform.position).normalized;
@@ -83,6 +118,7 @@ public class Monster : MonoBehaviour
 	void Damage(){
 		if(nearPlayer && inView && !onDanger){
 			onDanger = true;
+			StartCoroutine(SafePlaceTimer());
 			dangertemp = danger;
 		}
 		if(onDanger && (!nearPlayer || ! inView)){

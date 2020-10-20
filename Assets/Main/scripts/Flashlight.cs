@@ -40,7 +40,7 @@ public class Flashlight : MonoBehaviour
 			//flash_source.Play();
 		}
 		if(isFlashlightOn && timeOfBatteryLeft > 0){
-			f_Light.intensity = 1;
+			f_Light.intensity = 7;
 		}else{
 			f_Light.intensity = 0;
 		}
