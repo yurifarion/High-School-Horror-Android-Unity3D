@@ -148,7 +148,16 @@ public class Monster : MonoBehaviour
 			Cursor.lockState = CursorLockMode.None;
 			Application.LoadLevel("GameOver");
 		}
-		alpha = danger/lifeDuration;
+		alpha = 0;
+		if(danger/lifeDuration > 0.5 && onDanger){
+			alpha = danger/lifeDuration;
+		}
+		else if(danger/lifeDuration < 0.5 && onDanger){
+			alpha = 0.7f;
+		}	
+		else if(!onDanger){
+			alpha = danger/lifeDuration;
+		}		
 		deathscreen.color = Color.red;
 		deathscreen.canvasRenderer.SetAlpha(alpha);
 		

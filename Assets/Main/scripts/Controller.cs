@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+	public float cameraSensitivity = 0.7f;
+	public float movementSensitivity = 1f;
 	public float walkspeed = 2.5f;
 	public float runspeed = 6f;
+	
 	
 	public float rotationX;
 	public float rotationY;
@@ -31,9 +34,9 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if((camera_joystick.Horizontal > 4f || camera_joystick.Horizontal < -4f) || (camera_joystick.Vertical > 4f || camera_joystick.Vertical < -4f)){
+		//if((camera_joystick.Horizontal > 4f || camera_joystick.Horizontal < -4f) || (camera_joystick.Vertical > 4f || camera_joystick.Vertical < -4f)){
 			FPSCamera();
-		}
+		//}
 		PlayerControls();
 		//quit
 		if(Input.GetKey(KeyCode.Escape)){
@@ -43,8 +46,8 @@ public class Controller : MonoBehaviour
 	void PlayerControls(){
 		//if(Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0){
 		if((movement_joystick.Horizontal > 0.3f || movement_joystick.Horizontal < -0.3f) || (movement_joystick.Vertical > 0.3f || movement_joystick.Vertical < -0.3f)){
-			float hInput = movement_joystick.Horizontal;
-			float vInput = movement_joystick.Vertical;
+			float hInput = movement_joystick.Horizontal * movementSensitivity;
+			float vInput = movement_joystick.Vertical * movementSensitivity;
 			//float hInput = Input.GetAxis("Horizontal");
 			//float vInput = Input.GetAxis("Vertical");
 			
@@ -73,8 +76,8 @@ public class Controller : MonoBehaviour
 		}
 	}
 	void FPSCamera(){
-		rotationX += camera_joystick.Horizontal * 0.70f;
-		rotationY += camera_joystick.Vertical * 0.70f;
+		rotationX += camera_joystick.Horizontal * cameraSensitivity;
+		rotationY += camera_joystick.Vertical * cameraSensitivity;
 		//rotationX += Input.GetAxis("Mouse X")*10;
 		//rotationY += Input.GetAxis("Mouse Y")*10;
 		

@@ -16,8 +16,6 @@ ScriptsOnlyBuild:
     - randomSounds
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
-    GoogleMobileAds.dll:
-    - GoogleMobileAds.Common.MobileAdsEventExecutor
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -56,21 +54,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9660}
+      Script: {instanceID: 9796}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 9850}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 10218}
+      Script: {instanceID: 10442}
     - Class: 114
-      Script: {instanceID: 10560}
+      Script: {instanceID: 10862}
     - Class: 114
-      Script: {instanceID: 11002}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11788}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -105,21 +103,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9660}
+      Script: {instanceID: 9796}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 9850}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 10218}
+      Script: {instanceID: 10442}
     - Class: 114
-      Script: {instanceID: 10560}
+      Script: {instanceID: 10862}
     - Class: 114
-      Script: {instanceID: 11002}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11788}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -153,8 +151,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -178,43 +174,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9660}
+      Script: {instanceID: 9796}
     - Class: 114
-      Script: {instanceID: 9742}
+      Script: {instanceID: 9902}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 9850}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 9968}
+      Script: {instanceID: 10164}
     - Class: 114
-      Script: {instanceID: 10218}
+      Script: {instanceID: 10442}
     - Class: 114
-      Script: {instanceID: 10360}
+      Script: {instanceID: 10626}
     - Class: 114
-      Script: {instanceID: 10362}
+      Script: {instanceID: 10628}
     - Class: 114
-      Script: {instanceID: 10440}
+      Script: {instanceID: 10720}
     - Class: 114
-      Script: {instanceID: 10504}
+      Script: {instanceID: 10798}
     - Class: 114
-      Script: {instanceID: 10560}
+      Script: {instanceID: 10862}
     - Class: 114
-      Script: {instanceID: 10944}
+      Script: {instanceID: 11306}
     - Class: 114
-      Script: {instanceID: 10974}
+      Script: {instanceID: 11342}
     - Class: 114
-      Script: {instanceID: 11002}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11046}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 11092}
+      Script: {instanceID: 11482}
     - Class: 114
-      Script: {instanceID: 11226}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 11298}
+      Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11788}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -275,23 +271,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9660}
+      Script: {instanceID: 9796}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 9850}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 10218}
+      Script: {instanceID: 10442}
     - Class: 114
-      Script: {instanceID: 10560}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 11002}
+      Script: {instanceID: 10862}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11356}
+      Script: {instanceID: 11780}
     - Class: 114
-      Script: {instanceID: 19440}
+      Script: {instanceID: 11788}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -515,7 +511,7 @@ ScriptsOnlyBuild:
     className: DetectMonster
   - hash:
       serializedVersion: 2
-      Hash: df55981039a20b5fcc851fe3657b8780
+      Hash: 4be31aef250a1cec74968a9063312272
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -561,6 +557,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: bl_Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: 6fb512c6733e02f441372611e6f94f11
+    assemblyName: GoogleMobileAds.Editor.dll
+    namespaceName: GoogleMobileAds.Editor
+    className: GoogleMobileAdsSettings
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -635,6 +637,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: GoogleMobileAds.dll
+    namespaceName: GoogleMobileAds.Common
+    className: MobileAdsEventExecutor
+  - hash:
+      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -677,7 +685,7 @@ ScriptsOnlyBuild:
     className: Monster
   - hash:
       serializedVersion: 2
-      Hash: d6fdcb4194866c7ed7640cfa8202520a
+      Hash: 28836d6003def1e919dea9fd0f00bfa3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controller
@@ -807,22 +815,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 6fb512c6733e02f441372611e6f94f11
-    assemblyName: GoogleMobileAds.Editor.dll
-    namespaceName: GoogleMobileAds.Editor
-    className: GoogleMobileAdsSettings
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: GoogleMobileAds.dll
-    namespaceName: GoogleMobileAds.Common
-    className: MobileAdsEventExecutor
   platform: 13
   scenePathNames:
   - Assets/Main/Scenes/Menu.unity
   - Assets/Main/Scenes/MainLevel.unity
   - Assets/Main/Scenes/GameWin.unity
   - Assets/Main/Scenes/GameOver.unity
-  playerPath: C:/Users/yurir/OneDrive/Documentos/HSH Game Fiverr/highschoolhorrorgamefiverr/V_0_4.apk
+  playerPath: C:/Users/yurir/OneDrive/Documentos/HSH Game Fiverr/highschoolhorrorgamefiverr/V_0_2.apk

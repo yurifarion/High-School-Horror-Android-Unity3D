@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8848381059302477886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7933162454357362772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d12fdbc3bcefde4c80bebd5238f9990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  player_transform: {fileID: 0}
+  facePlayerfactor: 20
+  inView: 0
+  isOnFlashLightTrigger: 0
+  nearPlayer: 0
+  distancePlayer: 12
+  cube: {fileID: 0}
+  cube_transform: {fileID: 0}
+  spawnOrigin: {x: 0, y: 0, z: 0}
+  distanceRayMax: 0
+  safePlace: {fileID: 0}
+  isSafePlaceavailable: 0
+  spawnRate: 80
+  nextTeleport: 10
+  currentTime: 0
+  danger: 0
+  dangertemp: 0
+  pointInTime_Damage: 0
+  pointInTime_health: 0
+  lifeDuration: 10
+  onDanger: 0
+  deathscreen: {fileID: 0}
+  alpha: 0
+  deathTime: 0
+--- !u!1001 &5615615177801550518
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2591519735942775522, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_Name
+      value: Horror_monster Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.903677
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.59041595
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.637348
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 183.288
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334897234793972275, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3690567160366214179, guid: e712ce5f9f7dad84d91ef647e3c74e10, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: e712ce5f9f7dad84d91ef647e3c74e10, type: 3}
+--- !u!1 &7933162454357362772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2591519735942775522, guid: e712ce5f9f7dad84d91ef647e3c74e10,
+    type: 3}
+  m_PrefabInstance: {fileID: 5615615177801550518}
+  m_PrefabAsset: {fileID: 0}

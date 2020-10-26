@@ -12,7 +12,14 @@ public class GameManager : MonoBehaviour
 	//controllers
 	public int keysfound = 0;
 	public bool isGamePaused = false;
-	
+	//JumpScare Spawn
+	public GameObject monsterprefab;
+	public Transform spawnPosition1;
+	public Transform spawnPosition2;
+	public Transform spawnPosition3;
+	public Transform spawnPosition4;
+	public Transform spawnPosition5;
+	public Transform spawnPosition6;
 	//trigger
 	public bool isOnKeyTrigger_ = false;
 	public bool isOnPageTrigger_ = false;
@@ -37,6 +44,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         initSpawns();
+		spawnJumpScare();
     }
 
     // Update is called once per frame
@@ -65,6 +73,35 @@ public class GameManager : MonoBehaviour
 					amountOfKeysIngame++;
 				}
 			}
+		}
+	}
+	void spawnJumpScare(){
+		int rand = Random.Range(1,6);
+		switch(rand)
+		{
+			case 1: 
+			Instantiate(monsterprefab,spawnPosition1.position,spawnPosition1.rotation);
+				break;
+			case 2:
+			Instantiate(monsterprefab,spawnPosition2.position,spawnPosition2.rotation);
+				break;
+			case 3:
+			Instantiate(monsterprefab,spawnPosition3.position,spawnPosition3.rotation);
+				break;
+			case 4:
+			Instantiate(monsterprefab,spawnPosition4.position,spawnPosition4.rotation);
+				break;
+			case 5:
+			Instantiate(monsterprefab,spawnPosition5.position,spawnPosition5.rotation);
+				break;
+			case 6:
+			Instantiate(monsterprefab,spawnPosition6.position,spawnPosition6.rotation);
+				break;
+			default:
+			Instantiate(monsterprefab,spawnPosition6.position,spawnPosition6.rotation);
+			break;
+			
+			
 		}
 	}
 	public void closePage(){
