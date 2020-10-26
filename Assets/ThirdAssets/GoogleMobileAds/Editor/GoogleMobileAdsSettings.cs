@@ -24,7 +24,7 @@ namespace GoogleMobileAds.Editor
         private bool isAdManagerEnabled = false;
 
         [SerializeField]
-        private bool isAdMobEnabled = true;
+        private bool isAdMobEnabled = false;
 
         [SerializeField]
         private string adMobAndroidAppId = "ca-app-pub-3940256099942544~3347511713";
