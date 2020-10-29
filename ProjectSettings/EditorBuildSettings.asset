@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Main/Scenes/MainLevel.unity
     guid: 9a0bef8b24e82784fb621d4afcb5753e
   - enabled: 1
+    path: Assets/Main/Scenes/Bedroom.unity
+    guid: 8597b1916a7c81d4293c49c80ff414a8
+  - enabled: 1
     path: Assets/Main/Scenes/GameWin.unity
     guid: 89ce5acabf4fbf449b7ab530de7c6a14
   - enabled: 1

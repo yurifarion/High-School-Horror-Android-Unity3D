@@ -16,6 +16,8 @@ ScriptsOnlyBuild:
     - randomSounds
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
+    GoogleMobileAds.dll:
+    - GoogleMobileAds.Common.MobileAdsEventExecutor
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -34,6 +36,73 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Main/Scenes/Bedroom.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9794}
+    - Class: 114
+      Script: {instanceID: 10024}
+    - Class: 114
+      Script: {instanceID: 10444}
+    - Class: 114
+      Script: {instanceID: 10714}
+    - Class: 114
+      Script: {instanceID: 11374}
+    - Class: 114
+      Script: {instanceID: 11778}
+    - Class: 114
+      Script: {instanceID: 11786}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Main/Scenes/GameOver.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -54,21 +123,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9720}
+      Script: {instanceID: 9794}
     - Class: 114
-      Script: {instanceID: 9898}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 9940}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10346}
+      Script: {instanceID: 10444}
     - Class: 114
-      Script: {instanceID: 10748}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11634}
+      Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11786}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -103,21 +172,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9720}
+      Script: {instanceID: 9794}
     - Class: 114
-      Script: {instanceID: 9898}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 9940}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10346}
+      Script: {instanceID: 10444}
     - Class: 114
-      Script: {instanceID: 10748}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11634}
+      Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11786}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,43 +243,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9720}
+      Script: {instanceID: 9794}
     - Class: 114
-      Script: {instanceID: 9822}
+      Script: {instanceID: 9904}
     - Class: 114
-      Script: {instanceID: 9898}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 9940}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10076}
+      Script: {instanceID: 10162}
     - Class: 114
-      Script: {instanceID: 10346}
+      Script: {instanceID: 10444}
     - Class: 114
-      Script: {instanceID: 10516}
+      Script: {instanceID: 10616}
     - Class: 114
-      Script: {instanceID: 10518}
+      Script: {instanceID: 10618}
     - Class: 114
-      Script: {instanceID: 10608}
+      Script: {instanceID: 10714}
     - Class: 114
-      Script: {instanceID: 10686}
+      Script: {instanceID: 10798}
     - Class: 114
-      Script: {instanceID: 10748}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 11180}
+      Script: {instanceID: 11308}
     - Class: 114
-      Script: {instanceID: 11212}
+      Script: {instanceID: 11340}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11344}
+      Script: {instanceID: 11476}
     - Class: 114
-      Script: {instanceID: 11496}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 11574}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11786}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -271,23 +340,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9720}
+      Script: {instanceID: 9794}
     - Class: 114
-      Script: {instanceID: 9898}
+      Script: {instanceID: 9982}
     - Class: 114
-      Script: {instanceID: 9940}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10346}
+      Script: {instanceID: 10444}
     - Class: 114
-      Script: {instanceID: 10710}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 10748}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11634}
+      Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11786}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -819,6 +888,7 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Main/Scenes/Menu.unity
   - Assets/Main/Scenes/MainLevel.unity
+  - Assets/Main/Scenes/Bedroom.unity
   - Assets/Main/Scenes/GameWin.unity
   - Assets/Main/Scenes/GameOver.unity
   playerPath: C:/Users/yurir/OneDrive/Documentos/HSH Game Fiverr/highschoolhorrorgamefiverr/V_0_3.apk

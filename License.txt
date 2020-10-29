@@ -1,6 +1,8 @@
 School assets by Jarst https://assetstore.unity.com/packages/3d/environments/school-assets-146253
 Floor Tile by musdasch https://opengameart.org/content/floor-tile
 Key 3D - pmiller - https://opengameart.org/content/low-poly-modern-key
+Toon Furniture -Elcanetay -https://assetstore.unity.com/packages/3d/props/furniture/toon-furniture-88740
+
 
 UICONTROL - Lovatto Studio https://assetstore.unity.com/packages/tools/input-management/ujoystick-49186
 UI buttons - Kenney

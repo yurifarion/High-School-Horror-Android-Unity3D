@@ -14,6 +14,10 @@ public class MenuAction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		if(Application.loadedLevelName == "Menu"){
+			PlayerPrefs.SetInt("Keys",0);
+		}
+		
          // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize(initStatus => { });
 		this.rewardedAd = new RewardedAd("ca-app-pub-3940256099942544/5224354917");
@@ -58,6 +62,10 @@ public class MenuAction : MonoBehaviour
 		Application.LoadLevel("Menu");
 		bannerView.Destroy();
 	}
+	public void goToGameWin(){
+		Application.LoadLevel("GameWin");
+		bannerView.Destroy();
+	}
 	public void revive(){
 		bannerView.Destroy();
 		if (this.rewardedAd.IsLoaded()) {
@@ -83,5 +91,8 @@ public class MenuAction : MonoBehaviour
 	}
 	public void ToggleMusic(){
 		isMusicOn =  !isMusicOn;
+	}
+	public void goToPrivacy(){
+		Application.OpenURL("http://onionkeygames.blogspot.com/2020/10/privacy-policy-tom-felton-built-zabel.html");
 	}
 }

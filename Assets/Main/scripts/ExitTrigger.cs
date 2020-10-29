@@ -32,6 +32,6 @@ public class ExitTrigger : MonoBehaviour
 		}
 	}
 	public void GameWin(){
-		Application.LoadLevel("GameWin");
+		Application.LoadLevel("Bedroom");
 	}
 }

@@ -43,6 +43,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		amountOfKeysIngame = PlayerPrefs.GetInt("Keys", 0);
+		keysfound = PlayerPrefs.GetInt("Keys", 0);
+		keyCounter_txt.text = keysfound+" keys found";
         initSpawns();
 		spawnJumpScare();
     }
@@ -116,6 +119,7 @@ public class GameManager : MonoBehaviour
 		if(currentKey != null){
 			keysfound++;
 			isOnKeyTrigger_ = false;
+			PlayerPrefs.SetInt("Keys",keysfound);
 			Destroy(currentKey);
 			keyCounter_txt.text = keysfound+" keys found";
 		}
