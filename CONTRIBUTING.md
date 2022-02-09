@@ -1,50 +1,90 @@
+# Contributing
 
-# SpaceBulletTime - Roguelike|Procedural generation
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. 
 
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
+Please note we have a code of conduct, please follow it in all your interactions with the project.
 
+## Pull Request Process
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
+1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
+   build.
+2. Update the README.md with details of changes to the interface, this includes new environment 
+   variables, exposed ports, useful file locations and container parameters.
+3. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
+   do not have permission to do that, you may request the second reviewer to merge it for you.
 
-<img src="sc_1.png" alt="exemplo imagem">
+## Code of Conduct
 
-> Space Bullet is a space roguelike shooter, in this game the bullets and the enemies only move if the player moves. The map is randomly generated so you will alway play a fresh experience.
-### Adjustments and improvementss
+### Our Pledge
 
-I am still developing this game, i can only work on it in my free time, so it's very slow paced
+In the interest of fostering an open and welcoming environment, we as
+contributors and maintainers pledge to making participation in our project and
+our community a harassment-free experience for everyone, regardless of age, body
+size, disability, ethnicity, gender identity and expression, level of experience,
+nationality, personal appearance, race, religion, or sexual identity and
+orientation.
 
-- [x] Create Player movement and animations.
-- [x] Bullet time with bullets and particles when the player isn't moving.
-- [x] Random map based in a seed.
-- [ ] Enemies artificial intelligence, movement
-- [ ] Random indoors and Enemies in the map.
+### Our Standards
 
-## 💻 Requirements
+Examples of behavior that contributes to creating a positive environment
+include:
 
-Before starting, make sure you've met the following requirements:
-* Unity 2020,1,6f1
-* This game uses URP for 2D, it's not compatible with HTML5
+* Using welcoming and inclusive language
+* Being respectful of differing viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for the community
+* Showing empathy towards other community members
 
-## 📫 Contributing to SpaceBulletTime
+Examples of unacceptable behavior by participants include:
 
-To contribute to SpaceBulletTime, follow these steps:
+* The use of sexualized language or imagery and unwelcome sexual attention or
+advances
+* Trolling, insulting/derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or electronic
+  address, without explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 
-1. Fork this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<message_commit>'`
-4. Push to the original branch: `git push origin <project_name> / <local>`
-5. Create the pull request.
+### Our Responsibilities
 
+Project maintainers are responsible for clarifying the standards of acceptable
+behavior and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behavior.
 
+Project maintainers have the right and responsibility to remove, edit, or
+reject comments, commits, code, wiki edits, issues, and other contributions
+that are not aligned to this Code of Conduct, or to ban temporarily or
+permanently any contributor for other behaviors that they deem inappropriate,
+threatening, offensive, or harmful.
 
-## 😄 Be one of the contributors<br>
+### Scope
 
-Want to be part of this project? Click [HERE](CONTRIBUTING.md) and read how to contribute.
+This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an appointed
+representative at an online or offline event. Representation of a project may be
+further defined and clarified by project maintainers.
 
-## 📝 License
+### Enforcement
 
-This project is under license. See the [LICENSE](CC-BY-4.0.md) file for more details.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
+complaints will be reviewed and investigated and will result in a response that
+is deemed necessary and appropriate to the circumstances. The project team is
+obligated to maintain confidentiality with regard to the reporter of an incident.
+Further details of specific enforcement policies may be posted separately.
 
-[⬆Back to the top](#SpaceBulletTime)<br>
+Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project's leadership.
+
+### Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
+available at [http://contributor-covenant.org/version/1/4][version]
+
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
